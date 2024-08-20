@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio de Sesión</title>
+    <link rel="stylesheet" href="iniciosesion.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="side-container left">
+            <div class="image-placeholder"></div>
+        </div>
+        <div class="login-container">
+            <div class="login-box">
+                <select id="userType">
+                    <option value="">Tipo de usuario</option>
+                    <option value="instructor">Instructor</option>
+                    <option value="administrador">Administrador</option>
+                </select>
+                <select id="program">
+                    <option value="">Programa</option>
+                    <option value="sennovalab">Sennovalab</option>
+                    <option value="metrologia">Metrología</option>
+                </select>
+                <button id="continueBtn">Continuar</button>
+                <!-- Nuevo apartado agregado aquí -->
+                <div class="login-help">
+                    <p>¿No tienes cuenta? <a href="/Registro_Usuario/registro.html">Regístrate</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="side-container right">
+            <div class="image-placeholder"></div>
+        </div>
+    </div>
+    <script src="/Iniciosesion/inicosesion.js"></script>
+</body>
+</html>

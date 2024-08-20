@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestor documental</title>
+    <link rel="stylesheet" href="/gestordocumental_metrologia/gestor.css">
+</head>
+<body>
+    <header>
+        <div class="logo">Documentación</div>
+        <div class="user-info">
+            <img src="/gestordocumental sennova/img/user.png" alt="User Photo" class="user-photo">
+            <span class="user-name">Username</span>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Buscar...">
+            <button type="submit">Buscar</button>
+        </div>
+    </header>
+    
+    <main>
+        <aside class="sidebar">
+            <ul>
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+                <li>4</li>
+                <li>5
+                    <ul>
+                        <li>6</li>
+                        <li>7</li>
+                        <li>8</li>
+                        <li>9</li>
+                        <li>10</li>
+                        <li>11</li>
+                        <li>12</li>
+                    </ul>
+                </li>
+                <li>Varios</li>
+            </ul>
+        </aside>
+        <section class="content">
+            <h1>Documents</h1>
+            <div class="document-tools">
+                <button>New</button>
+                <button>Import a file</button>
+                <button>Filter</button>
+            </div>
+            <table class="document-table">
+                <thead>
+                    <tr>
+                        <th>Title</th>
+                        <th>Modified</th>
+                        <th>Last contributor</th>
+                        <th>Version</th>
+                        <th>State</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Comunicación de Prestación</td>
+                        <td>4/3/2014</td>
+                        <td>Administrator</td>
+                        <td></td>
+                        <td>Project</td>
+                    </tr>
+                    <tr>
+                        <td>Licitación</td>
+                        <td>4/3/2014</td>
+                        <td>Administrator</td>
+                        <td></td>
+                        <td>Project</td>
+                    </tr>
+                    <tr>
+                        <td>Estudio Urbano Previo</td>
+                        <td>4/3/2014</td>
+                        <td>Administrator</td>
+                        <td></td>
+                        <td>Project</td>
+                    </tr>
+                    <!-- Añadir más filas según la imagen -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="/gestordocumental sennova/gestorsenno.js"></script>
+</body>
+</html>

@@ -1,0 +1,187 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+/* Estilos del encabezado */
+header {
+    background-color: #0066cc;
+    color: white;
+    padding: 10px 20px;
+    display: grid;
+    grid-template-columns: 1fr auto 1fr;
+    align-items: center;
+    justify-items: center; /* Centra los elementos en sus celdas */
+}
+
+/* Estilos del logo */
+.logo {
+    grid-column: 1; /* Columna 1 */
+    font-size: 24px;
+    font-weight: bold;
+}
+
+/* Estilos para el apartado de usuario en el header */
+.user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    grid-column: 2; /* Columna central */
+}
+
+.user-photo {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    margin-bottom: 5px;
+}
+
+.user-name {
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+nav {
+    grid-column: 1; /* Columna 1 */
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.search-bar {
+    grid-column: 3; /* Columna 3 */
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.search-bar input {
+    padding: 5px;
+    border: none;
+    border-radius: 3px;
+    margin-right: 10px;
+}
+
+.search-bar button {
+    padding: 5px 10px;
+    background-color: #004080;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Estilos del contenido principal */
+main {
+    display: flex;
+}
+
+/* Estilos de la barra lateral */
+.sidebar {
+    width: 250px;
+    background-color: #e0e0e0;
+    padding: 20px;
+    height: calc(100vh - 60px);
+    overflow-y: auto;
+}
+
+.sidebar ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.sidebar ul ul {
+    padding-left: 20px;
+}
+
+.sidebar li {
+    margin-bottom: 10px;
+}
+
+/* Estilos del contenido principal */
+.content {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: white;
+}
+
+h1 {
+    color: #333;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 10px;
+}
+
+.document-tools {
+    margin-bottom: 20px;
+}
+
+.document-tools button {
+    padding: 5px 10px;
+    margin-right: 10px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Estilos de la tabla de documentos */
+.document-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.document-table th,
+.document-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.document-table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+}
+
+.document-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.document-table tr:hover {
+    background-color: #f5f5f5;
+}
+
+/* Iconos y elementos adicionales */
+.icon {
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    margin-right: 5px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.icon-folder {
+    background-image: url('path_to_folder_icon.png');
+}
+
+.icon-file {
+    background-image: url('path_to_file_icon.png');
+}

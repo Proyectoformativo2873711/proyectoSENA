@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+*{
+    font-family: "Ubuntu", sans-serif;
+}
+
+body, html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    background-image: url(../inicio_metrologia/images/Carreras-del-SENA-mejor-pagadas.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.main-container {
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+.side-container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.image-placeholder {
+    background-color: #ddd;
+    border: 2px solid #999;
+    height: 50%;
+    margin: 10px 0;
+}
+
+.login-container {
+    flex: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    width: 100%;
+}
+
+.login-box {
+    background-color: white;
+    border: 2px solid #ccc;
+    padding: 20px;
+    width: 100%;
+    max-width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.login-title {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+select, input, button {
+    padding: 10px;
+    background-color: #e0e0e0;
+    border: 1px solid #999;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+select {
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M10.293 3.293L6 7.586 1.707 3.293A1 1 0 00.293 4.707l5 5a1 1 0 001.414 0l5-5a1 1 0 10-1.414-1.414z' fill='%23333'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+
+button {
+    background-color: #ccc;
+    border: none;
+    cursor: pointer;
+}
+
+button:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+a {
+    text-align: center;
+    color: #333;
+    text-decoration: none;
+}
+.error-message {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 10px;
+    text-align: center;
+    display: none; /* Ocultar el mensaje por defecto */
+}
+
